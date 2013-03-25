@@ -17,12 +17,13 @@
 		D080619F16FF92B10097B2B5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D080619E16FF92B10097B2B5 /* Default@2x.png */; };
 		D08061A116FF92B20097B2B5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D08061A016FF92B20097B2B5 /* Default-568h@2x.png */; };
 		D08061A416FF92B20097B2B5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D08061A216FF92B20097B2B5 /* MainStoryboard.storyboard */; };
-		D08061A716FF92B20097B2B5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08061A616FF92B20097B2B5 /* FirstViewController.m */; };
 		D08061A916FF92B20097B2B5 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D08061A816FF92B20097B2B5 /* first.png */; };
 		D08061AB16FF92B20097B2B5 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D08061AA16FF92B20097B2B5 /* first@2x.png */; };
 		D08061AE16FF92B20097B2B5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08061AD16FF92B20097B2B5 /* SecondViewController.m */; };
 		D08061B016FF92B20097B2B5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = D08061AF16FF92B20097B2B5 /* second.png */; };
 		D08061B216FF92B20097B2B5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D08061B116FF92B20097B2B5 /* second@2x.png */; };
+		D0C7EC9F1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */; };
+		D0C7ECA21700E77100B77F93 /* MonatswerteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,14 +41,16 @@
 		D080619E16FF92B10097B2B5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D08061A016FF92B20097B2B5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D08061A316FF92B20097B2B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D08061A516FF92B20097B2B5 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		D08061A616FF92B20097B2B5 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		D08061A816FF92B20097B2B5 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		D08061AA16FF92B20097B2B5 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		D08061AC16FF92B20097B2B5 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		D08061AD16FF92B20097B2B5 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		D08061AF16FF92B20097B2B5 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		D08061B116FF92B20097B2B5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		D0C7EC9D1700E2FD00B77F93 /* MonatsverbrauchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonatsverbrauchTableViewController.h; sourceTree = "<group>"; };
+		D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonatsverbrauchTableViewController.m; sourceTree = "<group>"; };
+		D0C7ECA01700E77100B77F93 /* MonatswerteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonatswerteTableViewController.h; sourceTree = "<group>"; };
+		D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonatswerteTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +100,14 @@
 				D080619916FF92B10097B2B5 /* AppDelegate.h */,
 				D080619A16FF92B10097B2B5 /* AppDelegate.m */,
 				D08061A216FF92B20097B2B5 /* MainStoryboard.storyboard */,
-				D08061A516FF92B20097B2B5 /* FirstViewController.h */,
-				D08061A616FF92B20097B2B5 /* FirstViewController.m */,
 				D08061A816FF92B20097B2B5 /* first.png */,
 				D08061AA16FF92B20097B2B5 /* first@2x.png */,
 				D08061AC16FF92B20097B2B5 /* SecondViewController.h */,
 				D08061AD16FF92B20097B2B5 /* SecondViewController.m */,
+				D0C7EC9D1700E2FD00B77F93 /* MonatsverbrauchTableViewController.h */,
+				D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */,
+				D0C7ECA01700E77100B77F93 /* MonatswerteTableViewController.h */,
+				D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */,
 				D08061AF16FF92B20097B2B5 /* second.png */,
 				D08061B116FF92B20097B2B5 /* second@2x.png */,
 				D080619116FF92B00097B2B5 /* Supporting Files */,
@@ -196,8 +201,9 @@
 			files = (
 				D080619716FF92B10097B2B5 /* main.m in Sources */,
 				D080619B16FF92B10097B2B5 /* AppDelegate.m in Sources */,
-				D08061A716FF92B20097B2B5 /* FirstViewController.m in Sources */,
 				D08061AE16FF92B20097B2B5 /* SecondViewController.m in Sources */,
+				D0C7EC9F1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m in Sources */,
+				D0C7ECA21700E77100B77F93 /* MonatswerteTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +326,7 @@
 				D08061B716FF92B20097B2B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
