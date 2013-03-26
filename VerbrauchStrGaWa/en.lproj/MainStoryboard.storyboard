@@ -50,7 +50,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="Stromwert" id="YAR-Bn-4Qd">
+                            <tableViewSection headerTitle="Aktuelles Datum" id="YAR-Bn-4Qd">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="42" id="USE-nH-UqU">
                                         <rect key="frame" x="0.0" y="46" width="320" height="44"/>
@@ -59,7 +59,7 @@
                                             <rect key="frame" x="10" y="1" width="300" height="41"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="Ablesewert Strom in Kwh" textAlignment="right" minimumFontSize="17" id="Q76-At-g1H">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="Aktuelles Datum" textAlignment="right" minimumFontSize="17" id="Q76-At-g1H">
                                                     <rect key="frame" x="9" y="6" width="285" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -74,10 +74,34 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Stromwert" id="8zT-t8-CAB">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="42" id="gpj-03-tld">
+                                        <rect key="frame" x="0.0" y="127" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="41"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="Ablesewert Strom in Kwh" textAlignment="right" minimumFontSize="17" id="v22-Dl-18R">
+                                                    <rect key="frame" x="9" y="6" width="285" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="Atw-ow-iIm" id="5Vp-3w-AZ8"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection headerTitle="Gaswert" id="ppA-cE-N6E">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="42" id="YYy-lk-f81">
-                                        <rect key="frame" x="0.0" y="127" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="208" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="41"/>
@@ -101,14 +125,14 @@
                             <tableViewSection headerTitle="Wasserwert" id="1Ox-p7-Jr9">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="iDl-2f-WG2">
-                                        <rect key="frame" x="0.0" y="208" width="320" height="46"/>
+                                        <rect key="frame" x="0.0" y="289" width="320" height="46"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" placeholder="Ablesewert Wasser in m3" textAlignment="right" minimumFontSize="17" id="4Pv-gR-d9G">
-                                                    <rect key="frame" x="8" y="6" width="285" height="30"/>
+                                                    <rect key="frame" x="8" y="7" width="285" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -136,9 +160,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outletCollection property="MonatswerteCollection" destination="Q76-At-g1H" id="dAp-4y-rM4"/>
-                        <outletCollection property="MonatswerteCollection" destination="0YP-hK-G26" id="UjL-vo-4xX"/>
-                        <outletCollection property="MonatswerteCollection" destination="4Pv-gR-d9G" id="e97-VA-vrX"/>
+                        <outlet property="heutigesDatumTextField" destination="Q76-At-g1H" id="KpA-LR-6gL"/>
+                        <outletCollection property="MonatswerteCollection" destination="Q76-At-g1H" id="wcT-P3-qCt"/>
+                        <outletCollection property="MonatswerteCollection" destination="0YP-hK-G26" id="4YV-pi-Rs4"/>
+                        <outletCollection property="MonatswerteCollection" destination="4Pv-gR-d9G" id="Piw-lT-g2h"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRg-6x-Dy3" userLabel="First Responder" sceneMemberID="firstResponder"/>

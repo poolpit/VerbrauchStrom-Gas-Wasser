@@ -11,6 +11,9 @@
 @interface MonatswerteTableViewController () <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *MonatswerteCollection;
+// Für den DatePicker
+@property (nonatomic, strong) JSMDatePicker* datePicker;
+@property (weak, nonatomic) IBOutlet UITextField *heutigesDatumTextField;
 
 @end
 
@@ -28,12 +31,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // DatePicker initialisieren und aktuelles Datum ins Feld setzen
+    self.datePicker = [[JSMDatePicker alloc] initWithDateFormatString:@"dd-MM-yyyy" forTextField:self.heutigesDatumTextField withDatePickerMode:UIDatePickerModeDate];
+    
+    self.heutigesDatumTextField.inputView = self.datePicker;
+    
+    self.datePicker.date = [NSDate date];
+    
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,7 +62,7 @@
     for (UITextField *textField in self.MonatswerteCollection)
     {
         textField.delegate = self;
-        NSLog(@"--> Der Platzhalter des aktuellen feldes ist %@", textField.placeholder);
+        NSLog(@"--> Der Platzhalter des aktuellen Feldes ist %@", textField.placeholder);
     }
 }
 @end
