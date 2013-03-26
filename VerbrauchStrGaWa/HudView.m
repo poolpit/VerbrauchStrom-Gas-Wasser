@@ -34,6 +34,7 @@
     hudView.opaque = NO;
 
     [view addSubview:hudView];
+ 
     view.userInteractionEnabled = NO;
 
     [hudView showAnimated:animated];
