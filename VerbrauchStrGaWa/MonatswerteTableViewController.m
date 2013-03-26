@@ -7,17 +7,23 @@
 //
 
 #import "MonatswerteTableViewController.h"
+#import "HudView.h"
+
 
 @interface MonatswerteTableViewController () <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *MonatswerteCollection;
+
 // Für den DatePicker
 @property (nonatomic, strong) JSMDatePicker* datePicker;
-@property (weak, nonatomic) IBOutlet UITextField *heutigesDatumTextField;
+
 
 @end
 
 @implementation MonatswerteTableViewController
+
+@synthesize heutigesDatumTextField;
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -42,6 +48,11 @@
 
 }
 
+- (void)closeScreen
+{
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -64,5 +75,16 @@
         textField.delegate = self;
         NSLog(@"--> Der Platzhalter des aktuellen Feldes ist %@", textField.placeholder);
     }
+    
+    HudView *hudView = [HudView hudInView:self.navigationController.view animated:YES];
+    hudView.text = @"Gesichert";
+    
+    [self performSelector:@selector(closeScreen) withObject:nil afterDelay:0.6];
+       
+}
+
+- (IBAction)CancelMonatswerte:(id)sender
+{
+    [self closeScreen];
 }
 @end

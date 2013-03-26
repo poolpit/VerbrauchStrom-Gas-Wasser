@@ -11,6 +11,9 @@
 
 @interface MonatswerteTableViewController : UITableViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *heutigesDatumTextField;
+
 - (IBAction)SaveMonatswerte:(id)sender;
+- (IBAction)CancelMonatswerte:(id)sender;
 
 @end

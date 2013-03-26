@@ -32,7 +32,7 @@
                     <navigationItem key="navigationItem" title="Monatsverbrauch" id="xVr-kP-ioE">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gci-1N-oNX">
                             <connections>
-                                <segue destination="Atw-ow-iIm" kind="push" id="EO9-5O-34G"/>
+                                <segue destination="BHq-Tk-roc" kind="modal" id="PgX-AD-zZG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -46,7 +46,7 @@
             <objects>
                 <tableViewController id="Atw-ow-iIm" customClass="MonatswerteTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="7" sectionFooterHeight="1" id="QTi-lx-NCj">
-                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
@@ -153,6 +153,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Monatswerte" id="7NC-4h-Os4">
+                        <barButtonItem key="leftBarButtonItem" title="Abbruch" id="jsR-CD-KZu">
+                            <connections>
+                                <action selector="CancelMonatswerte:" destination="Atw-ow-iIm" id="0Oy-c1-8mI"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Speichern" id="KLA-EC-kfq">
                             <connections>
                                 <action selector="SaveMonatswerte:" destination="Atw-ow-iIm" id="VIv-rZ-WwU"/>
@@ -168,7 +173,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRg-6x-Dy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1445" y="-138"/>
+            <point key="canvasLocation" x="1971" y="-138"/>
         </scene>
         <!--Second View Controller - Second-->
         <scene sceneID="13">
@@ -193,7 +198,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="GVk-qE-tOl"/>
+                    <navigationItem key="navigationItem" title="khgjhghj" id="GVk-qE-tOl">
+                        <barButtonItem key="backBarButtonItem" title="jhghj" id="nsj-a2-sOJ"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,7 +252,8 @@
                 <navigationController id="WoL-BZ-MEi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="6"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="411-Av-6US">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="411-Av-6US">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -257,6 +265,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHm-jM-i5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="j4M-2u-Zhd">
+            <objects>
+                <navigationController modalTransitionStyle="flipHorizontal" id="BHq-Tk-roc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="efd-OW-GLm"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="lIU-g3-H03">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Atw-ow-iIm" kind="relationship" relationship="rootViewController" id="8uF-3k-doQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1p-bM-IC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517" y="-138"/>
         </scene>
     </scenes>
     <resources>

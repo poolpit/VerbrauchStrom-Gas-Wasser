@@ -23,6 +23,9 @@
 		D08061B016FF92B20097B2B5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = D08061AF16FF92B20097B2B5 /* second.png */; };
 		D08061B216FF92B20097B2B5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D08061B116FF92B20097B2B5 /* second@2x.png */; };
 		D0932F191702221F00C1FB75 /* JSMDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D0932F181702221F00C1FB75 /* JSMDatePicker.m */; };
+		D0932F1D170232F000C1FB75 /* HudView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0932F1C170232F000C1FB75 /* HudView.m */; };
+		D0932F201702345000C1FB75 /* Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = D0932F1E1702345000C1FB75 /* Checkmark.png */; };
+		D0932F211702345000C1FB75 /* Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0932F1F1702345000C1FB75 /* Checkmark@2x.png */; };
 		D0C7EC9F1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */; };
 		D0C7ECA21700E77100B77F93 /* MonatswerteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -50,6 +53,10 @@
 		D08061B116FF92B20097B2B5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		D0932F171702221F00C1FB75 /* JSMDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMDatePicker.h; sourceTree = "<group>"; };
 		D0932F181702221F00C1FB75 /* JSMDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMDatePicker.m; sourceTree = "<group>"; };
+		D0932F1B170232F000C1FB75 /* HudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudView.h; sourceTree = "<group>"; };
+		D0932F1C170232F000C1FB75 /* HudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudView.m; sourceTree = "<group>"; };
+		D0932F1E1702345000C1FB75 /* Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checkmark.png; sourceTree = "<group>"; };
+		D0932F1F1702345000C1FB75 /* Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark@2x.png"; sourceTree = "<group>"; };
 		D0C7EC9D1700E2FD00B77F93 /* MonatsverbrauchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonatsverbrauchTableViewController.h; sourceTree = "<group>"; };
 		D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonatsverbrauchTableViewController.m; sourceTree = "<group>"; };
 		D0C7ECA01700E77100B77F93 /* MonatswerteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonatswerteTableViewController.h; sourceTree = "<group>"; };
@@ -109,7 +116,7 @@
 				D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */,
 				D0C7ECA01700E77100B77F93 /* MonatswerteTableViewController.h */,
 				D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */,
-				D0932F16170221F000C1FB75 /* JSMToolbox */,
+				D0932F16170221F000C1FB75 /* Toolbox */,
 				D0932F1A1702223100C1FB75 /* Icons */,
 				D080619116FF92B00097B2B5 /* Supporting Files */,
 			);
@@ -130,18 +137,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D0932F16170221F000C1FB75 /* JSMToolbox */ = {
+		D0932F16170221F000C1FB75 /* Toolbox */ = {
 			isa = PBXGroup;
 			children = (
+				D0932F1B170232F000C1FB75 /* HudView.h */,
+				D0932F1C170232F000C1FB75 /* HudView.m */,
 				D0932F171702221F00C1FB75 /* JSMDatePicker.h */,
 				D0932F181702221F00C1FB75 /* JSMDatePicker.m */,
 			);
-			name = JSMToolbox;
+			name = Toolbox;
 			sourceTree = "<group>";
 		};
 		D0932F1A1702223100C1FB75 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				D0932F1E1702345000C1FB75 /* Checkmark.png */,
+				D0932F1F1702345000C1FB75 /* Checkmark@2x.png */,
 				D08061B116FF92B20097B2B5 /* second@2x.png */,
 				D08061AF16FF92B20097B2B5 /* second.png */,
 				D08061AA16FF92B20097B2B5 /* first@2x.png */,
@@ -210,6 +221,8 @@
 				D08061AB16FF92B20097B2B5 /* first@2x.png in Resources */,
 				D08061B016FF92B20097B2B5 /* second.png in Resources */,
 				D08061B216FF92B20097B2B5 /* second@2x.png in Resources */,
+				D0932F201702345000C1FB75 /* Checkmark.png in Resources */,
+				D0932F211702345000C1FB75 /* Checkmark@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +239,7 @@
 				D0C7EC9F1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m in Sources */,
 				D0C7ECA21700E77100B77F93 /* MonatswerteTableViewController.m in Sources */,
 				D0932F191702221F00C1FB75 /* JSMDatePicker.m in Sources */,
+				D0932F1D170232F000C1FB75 /* HudView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +327,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VerbrauchStrGaWa/VerbrauchStrGaWa-Prefix.pch";
 				INFOPLIST_FILE = "VerbrauchStrGaWa/VerbrauchStrGaWa-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -324,6 +339,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VerbrauchStrGaWa/VerbrauchStrGaWa-Prefix.pch";
 				INFOPLIST_FILE = "VerbrauchStrGaWa/VerbrauchStrGaWa-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
