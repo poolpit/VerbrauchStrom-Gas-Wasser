@@ -7,7 +7,7 @@
 //
 
 #import "EinstellungenTableViewController.h"
-#import "HudView.h"
+#import "MBProgressHUD.h"
 
 @interface EinstellungenTableViewController () <UITextFieldDelegate>
 
@@ -30,10 +30,6 @@
 
 }
 
-- (void)closeScreen
-{
-    [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -49,14 +45,39 @@
     
     return YES;
 }
+
+#pragma mark - IBActions
+
 - (IBAction)AbbruchEinstellungen:(id)sender
 {
-    HudView *hudView = [HudView hudInView:self.parentViewController.view animated:YES];
-    hudView.text = @"Gesichert";
+
+	HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+	[self.navigationController.view addSubview:HUD];
+	
+	HUD.delegate = self;
+	HUD.labelText = @"Saving...";
+	//HUD.detailsLabelText = @"updating data";
+	HUD.square = YES;
+	
+	[HUD showWhileExecuting:@selector(myTask) onTarget:self withObject:nil animated:YES];
     
-    [self performSelector:@selector(closeScreen) withObject:nil afterDelay:0.6];
- 
+ }
+    
+#pragma mark - Task aus Actions
+
+- (void)myTask
+{
+	// Do something usefull in here instead of sleeping ...
+	sleep(1);
 }
 
+#pragma mark - MBProgressHUDDelegate methods
+
+- (void)hudWasHidden:(MBProgressHUD *)hud {
+	// Remove HUD from screen when the HUD was hidded
+	[HUD removeFromSuperview];
+	//[HUD release];
+	HUD = nil;
+}
 
 @end
