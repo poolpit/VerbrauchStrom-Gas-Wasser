@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "JSMDatePicker.h"
+#import "MBProgressHUD.h"
 
-@interface MonatswerteTableViewController : UITableViewController
+@interface MonatswerteTableViewController : UITableViewController <MBProgressHUDDelegate>
+{
+	MBProgressHUD *HUD;
+    
+	long long expectedLength;
+	long long currentLength;
+}
 
 @property (weak, nonatomic) IBOutlet UITextField *heutigesDatumTextField;
 

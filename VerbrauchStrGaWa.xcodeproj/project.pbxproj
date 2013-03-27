@@ -31,6 +31,8 @@
 		D0932F2917024B4300C1FB75 /* 19-gear.png in Resources */ = {isa = PBXBuildFile; fileRef = D0932F2817024B4300C1FB75 /* 19-gear.png */; };
 		D0932F2C17024F6000C1FB75 /* EinstellungenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0932F2B17024F6000C1FB75 /* EinstellungenTableViewController.m */; };
 		D0C5977C17037120005DC7A8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C5977B17037120005DC7A8 /* MBProgressHUD.m */; };
+		D0C5977F1703998B005DC7A8 /* ListeZaehlerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C5977E1703998B005DC7A8 /* ListeZaehlerTableViewController.m */; };
+		D0C597821703A2E4005DC7A8 /* ListeZaehlerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C597811703A2E4005DC7A8 /* ListeZaehlerTableViewCell.m */; };
 		D0C7EC9F1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */; };
 		D0C7ECA21700E77100B77F93 /* MonatswerteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,10 @@
 		D0932F2B17024F6000C1FB75 /* EinstellungenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EinstellungenTableViewController.m; sourceTree = "<group>"; };
 		D0C5977A17037120005DC7A8 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		D0C5977B17037120005DC7A8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D0C5977D1703998B005DC7A8 /* ListeZaehlerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListeZaehlerTableViewController.h; sourceTree = "<group>"; };
+		D0C5977E1703998B005DC7A8 /* ListeZaehlerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListeZaehlerTableViewController.m; sourceTree = "<group>"; };
+		D0C597801703A2E4005DC7A8 /* ListeZaehlerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListeZaehlerTableViewCell.h; sourceTree = "<group>"; };
+		D0C597811703A2E4005DC7A8 /* ListeZaehlerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListeZaehlerTableViewCell.m; sourceTree = "<group>"; };
 		D0C7EC9D1700E2FD00B77F93 /* MonatsverbrauchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonatsverbrauchTableViewController.h; sourceTree = "<group>"; };
 		D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonatsverbrauchTableViewController.m; sourceTree = "<group>"; };
 		D0C7ECA01700E77100B77F93 /* MonatswerteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonatswerteTableViewController.h; sourceTree = "<group>"; };
@@ -127,6 +133,10 @@
 				D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */,
 				D0932F2A17024F6000C1FB75 /* EinstellungenTableViewController.h */,
 				D0932F2B17024F6000C1FB75 /* EinstellungenTableViewController.m */,
+				D0C5977D1703998B005DC7A8 /* ListeZaehlerTableViewController.h */,
+				D0C5977E1703998B005DC7A8 /* ListeZaehlerTableViewController.m */,
+				D0C597801703A2E4005DC7A8 /* ListeZaehlerTableViewCell.h */,
+				D0C597811703A2E4005DC7A8 /* ListeZaehlerTableViewCell.m */,
 				D0932F16170221F000C1FB75 /* Toolbox */,
 				D0932F1A1702223100C1FB75 /* Icons */,
 				D080619116FF92B00097B2B5 /* Supporting Files */,
@@ -262,6 +272,8 @@
 				D0932F1D170232F000C1FB75 /* HudView.m in Sources */,
 				D0932F2C17024F6000C1FB75 /* EinstellungenTableViewController.m in Sources */,
 				D0C5977C17037120005DC7A8 /* MBProgressHUD.m in Sources */,
+				D0C5977F1703998B005DC7A8 /* ListeZaehlerTableViewController.m in Sources */,
+				D0C597821703A2E4005DC7A8 /* ListeZaehlerTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

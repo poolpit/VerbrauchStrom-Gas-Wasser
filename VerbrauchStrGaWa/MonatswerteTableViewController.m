@@ -7,7 +7,6 @@
 //
 
 #import "MonatswerteTableViewController.h"
-#import "HudView.h"
 
 
 @interface MonatswerteTableViewController () <UITextFieldDelegate>
@@ -17,13 +16,11 @@
 // Für den DatePicker
 @property (nonatomic, strong) JSMDatePicker* datePicker;
 
-
 @end
 
 @implementation MonatswerteTableViewController
 
 @synthesize heutigesDatumTextField;
-
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -45,13 +42,11 @@
     
     self.datePicker.date = [NSDate date];
     
+    self.navigationItem.title = @"Monatswerte";
+    
 
 }
 
-- (void)closeScreen
-{
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -72,21 +67,51 @@
 
 - (IBAction)SaveMonatswerte:(id)sender
 {
+    
+    HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+	[self.navigationController.view addSubview:HUD];
+	
+	HUD.delegate = self;
+	HUD.labelText = @"Saving...";
+	//HUD.detailsLabelText = @"updating data";
+	HUD.square = YES;
+	
+	[HUD showWhileExecuting:@selector(savingMonatswerte) onTarget:self withObject:nil animated:YES];
+    
+
+    
+}
+
+#pragma mark - Task aus Actions
+
+- (void)savingMonatswerte
+{
+	// Do something usefull in here instead of sleeping ...
+	//sleep(1);
+    
     for (UITextField *textField in self.MonatswerteCollection)
     {
         textField.delegate = self;
         NSLog(@"--> Der Platzhalter des aktuellen Feldes ist %@", textField.placeholder);
     }
     
-    HudView *hudView = [HudView hudInView:self.navigationController.view animated:YES];
-    hudView.text = @"Gesichert";
+    //Die Zeit noch etwas verlängern
+    sleep(1);
     
-    [self performSelector:@selector(closeScreen) withObject:nil afterDelay:0.6];
-       
+    //Und jetzt weg mit dem Femnster
+    [self.navigationController popViewControllerAnimated:YES];
+
+
+
 }
 
-- (IBAction)CancelMonatswerte:(id)sender
-{
-    [self closeScreen];
+#pragma mark - MBProgressHUDDelegate methods
+
+- (void)hudWasHidden:(MBProgressHUD *)hud {
+	// Remove HUD from screen when the HUD was hidded
+	[HUD removeFromSuperview];
+	//[HUD release];
+	HUD = nil;
 }
+
 @end

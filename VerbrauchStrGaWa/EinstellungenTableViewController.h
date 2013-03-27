@@ -7,13 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MBProgressHUD.h"
 
-@interface EinstellungenTableViewController : UITableViewController <MBProgressHUDDelegate> {
-	MBProgressHUD *HUD;
-    
-	long long expectedLength;
-	long long currentLength;
-}
+@interface EinstellungenTableViewController : UITableViewController
 
 @end
