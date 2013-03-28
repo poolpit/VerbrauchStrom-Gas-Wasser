@@ -61,8 +61,9 @@
     
     // Configure the cell...
     cell.ZaehlerTypLabel.text = @"Strom";
-    cell.ZaehlerTypLabel.en = @"Strom";
     cell.ZaehlerNummerTextField.text = @"12345678";
+    cell.AnzeigeStatusSwitch.on = TRUE;
+    
     
     return cell;
 }
