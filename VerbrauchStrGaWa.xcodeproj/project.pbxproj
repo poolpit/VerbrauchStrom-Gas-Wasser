@@ -139,10 +139,8 @@
 				D080619916FF92B10097B2B5 /* AppDelegate.h */,
 				D080619A16FF92B10097B2B5 /* AppDelegate.m */,
 				D08061A216FF92B20097B2B5 /* MainStoryboard.storyboard */,
-				D0C7EC9D1700E2FD00B77F93 /* MonatsverbrauchTableViewController.h */,
-				D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */,
-				D0C7ECA01700E77100B77F93 /* MonatswerteTableViewController.h */,
-				D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */,
+				D0E4C788170646FD000E0D98 /* Ablesewerte */,
+				D0E4C78917064732000E0D98 /* Monatsverbrauch */,
 				D0E4C77D170638A1000E0D98 /* Einstellungen */,
 				D0932F16170221F000C1FB75 /* Toolbox */,
 				D0932F1A1702223100C1FB75 /* Icons */,
@@ -230,6 +228,24 @@
 				D0E4C77F17063DDE000E0D98 /* NeuerGrundpreisTableViewController.m */,
 			);
 			name = Grundpreis;
+			sourceTree = "<group>";
+		};
+		D0E4C788170646FD000E0D98 /* Ablesewerte */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7EC9D1700E2FD00B77F93 /* MonatsverbrauchTableViewController.h */,
+				D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */,
+			);
+			name = Ablesewerte;
+			sourceTree = "<group>";
+		};
+		D0E4C78917064732000E0D98 /* Monatsverbrauch */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7ECA01700E77100B77F93 /* MonatswerteTableViewController.h */,
+				D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */,
+			);
+			name = Monatsverbrauch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
