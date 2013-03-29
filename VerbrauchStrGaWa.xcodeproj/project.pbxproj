@@ -35,6 +35,10 @@
 		D0C597821703A2E4005DC7A8 /* ListeZaehlerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C597811703A2E4005DC7A8 /* ListeZaehlerTableViewCell.m */; };
 		D0C7EC9F1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */; };
 		D0C7ECA21700E77100B77F93 /* MonatswerteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */; };
+		D0E4C77B17063698000E0D98 /* NeuerZaehlerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E4C77A17063698000E0D98 /* NeuerZaehlerTableViewController.m */; };
+		D0E4C78017063DDF000E0D98 /* NeuerGrundpreisTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E4C77F17063DDE000E0D98 /* NeuerGrundpreisTableViewController.m */; };
+		D0E4C78417063F48000E0D98 /* ListeGrundpreisTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E4C78317063F48000E0D98 /* ListeGrundpreisTableViewCell.m */; };
+		D0E4C78717064140000E0D98 /* ListeGrundpreisTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E4C78617064140000E0D98 /* ListeGrundpreisTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +82,14 @@
 		D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonatsverbrauchTableViewController.m; sourceTree = "<group>"; };
 		D0C7ECA01700E77100B77F93 /* MonatswerteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonatswerteTableViewController.h; sourceTree = "<group>"; };
 		D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonatswerteTableViewController.m; sourceTree = "<group>"; };
+		D0E4C77917063698000E0D98 /* NeuerZaehlerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuerZaehlerTableViewController.h; sourceTree = "<group>"; };
+		D0E4C77A17063698000E0D98 /* NeuerZaehlerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuerZaehlerTableViewController.m; sourceTree = "<group>"; };
+		D0E4C77E17063DDE000E0D98 /* NeuerGrundpreisTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NeuerGrundpreisTableViewController.h; sourceTree = "<group>"; };
+		D0E4C77F17063DDE000E0D98 /* NeuerGrundpreisTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NeuerGrundpreisTableViewController.m; sourceTree = "<group>"; };
+		D0E4C78217063F48000E0D98 /* ListeGrundpreisTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListeGrundpreisTableViewCell.h; sourceTree = "<group>"; };
+		D0E4C78317063F48000E0D98 /* ListeGrundpreisTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListeGrundpreisTableViewCell.m; sourceTree = "<group>"; };
+		D0E4C78517064140000E0D98 /* ListeGrundpreisTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListeGrundpreisTableViewController.h; sourceTree = "<group>"; };
+		D0E4C78617064140000E0D98 /* ListeGrundpreisTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListeGrundpreisTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,12 +143,7 @@
 				D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */,
 				D0C7ECA01700E77100B77F93 /* MonatswerteTableViewController.h */,
 				D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */,
-				D0932F2A17024F6000C1FB75 /* EinstellungenTableViewController.h */,
-				D0932F2B17024F6000C1FB75 /* EinstellungenTableViewController.m */,
-				D0C5977D1703998B005DC7A8 /* ListeZaehlerTableViewController.h */,
-				D0C5977E1703998B005DC7A8 /* ListeZaehlerTableViewController.m */,
-				D0C597801703A2E4005DC7A8 /* ListeZaehlerTableViewCell.h */,
-				D0C597811703A2E4005DC7A8 /* ListeZaehlerTableViewCell.m */,
+				D0E4C77D170638A1000E0D98 /* Einstellungen */,
 				D0932F16170221F000C1FB75 /* Toolbox */,
 				D0932F1A1702223100C1FB75 /* Icons */,
 				D080619116FF92B00097B2B5 /* Supporting Files */,
@@ -186,6 +193,43 @@
 				D08061A816FF92B20097B2B5 /* first.png */,
 			);
 			name = Icons;
+			sourceTree = "<group>";
+		};
+		D0E4C77C17063875000E0D98 /* Zaehler */ = {
+			isa = PBXGroup;
+			children = (
+				D0C5977D1703998B005DC7A8 /* ListeZaehlerTableViewController.h */,
+				D0C5977E1703998B005DC7A8 /* ListeZaehlerTableViewController.m */,
+				D0E4C77917063698000E0D98 /* NeuerZaehlerTableViewController.h */,
+				D0E4C77A17063698000E0D98 /* NeuerZaehlerTableViewController.m */,
+				D0C597801703A2E4005DC7A8 /* ListeZaehlerTableViewCell.h */,
+				D0C597811703A2E4005DC7A8 /* ListeZaehlerTableViewCell.m */,
+			);
+			name = Zaehler;
+			sourceTree = "<group>";
+		};
+		D0E4C77D170638A1000E0D98 /* Einstellungen */ = {
+			isa = PBXGroup;
+			children = (
+				D0932F2A17024F6000C1FB75 /* EinstellungenTableViewController.h */,
+				D0932F2B17024F6000C1FB75 /* EinstellungenTableViewController.m */,
+				D0E4C78117063EED000E0D98 /* Grundpreis */,
+				D0E4C78517064140000E0D98 /* ListeGrundpreisTableViewController.h */,
+				D0E4C78617064140000E0D98 /* ListeGrundpreisTableViewController.m */,
+				D0E4C78217063F48000E0D98 /* ListeGrundpreisTableViewCell.h */,
+				D0E4C78317063F48000E0D98 /* ListeGrundpreisTableViewCell.m */,
+				D0E4C77C17063875000E0D98 /* Zaehler */,
+			);
+			name = Einstellungen;
+			sourceTree = "<group>";
+		};
+		D0E4C78117063EED000E0D98 /* Grundpreis */ = {
+			isa = PBXGroup;
+			children = (
+				D0E4C77E17063DDE000E0D98 /* NeuerGrundpreisTableViewController.h */,
+				D0E4C77F17063DDE000E0D98 /* NeuerGrundpreisTableViewController.m */,
+			);
+			name = Grundpreis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +318,10 @@
 				D0C5977C17037120005DC7A8 /* MBProgressHUD.m in Sources */,
 				D0C5977F1703998B005DC7A8 /* ListeZaehlerTableViewController.m in Sources */,
 				D0C597821703A2E4005DC7A8 /* ListeZaehlerTableViewCell.m in Sources */,
+				D0E4C77B17063698000E0D98 /* NeuerZaehlerTableViewController.m in Sources */,
+				D0E4C78017063DDF000E0D98 /* NeuerGrundpreisTableViewController.m in Sources */,
+				D0E4C78417063F48000E0D98 /* ListeGrundpreisTableViewCell.m in Sources */,
+				D0E4C78717064140000E0D98 /* ListeGrundpreisTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
