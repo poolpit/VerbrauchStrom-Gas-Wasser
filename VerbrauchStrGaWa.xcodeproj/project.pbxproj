@@ -39,6 +39,8 @@
 		D0E4C78017063DDF000E0D98 /* NeuerGrundpreisTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E4C77F17063DDE000E0D98 /* NeuerGrundpreisTableViewController.m */; };
 		D0E4C78417063F48000E0D98 /* ListeGrundpreisTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E4C78317063F48000E0D98 /* ListeGrundpreisTableViewCell.m */; };
 		D0E4C78717064140000E0D98 /* ListeGrundpreisTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E4C78617064140000E0D98 /* ListeGrundpreisTableViewController.m */; };
+		D0FA117D1709F6F8003B3A26 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0FA117C1709F6F8003B3A26 /* Icon.png */; };
+		D0FA117F1709F701003B3A26 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0FA117E1709F701003B3A26 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,8 @@
 		D0E4C78317063F48000E0D98 /* ListeGrundpreisTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListeGrundpreisTableViewCell.m; sourceTree = "<group>"; };
 		D0E4C78517064140000E0D98 /* ListeGrundpreisTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListeGrundpreisTableViewController.h; sourceTree = "<group>"; };
 		D0E4C78617064140000E0D98 /* ListeGrundpreisTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListeGrundpreisTableViewController.m; sourceTree = "<group>"; };
+		D0FA117C1709F6F8003B3A26 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		D0FA117E1709F701003B3A26 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,8 @@
 		D0932F1A1702223100C1FB75 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				D0FA117E1709F701003B3A26 /* Icon@2x.png */,
+				D0FA117C1709F6F8003B3A26 /* Icon.png */,
 				D0932F2817024B4300C1FB75 /* 19-gear.png */,
 				D0932F2217024AF400C1FB75 /* 17-bar-chart.png */,
 				D0932F2317024AF400C1FB75 /* 40-inbox.png */,
@@ -212,10 +218,6 @@
 				D0932F2A17024F6000C1FB75 /* EinstellungenTableViewController.h */,
 				D0932F2B17024F6000C1FB75 /* EinstellungenTableViewController.m */,
 				D0E4C78117063EED000E0D98 /* Grundpreis */,
-				D0E4C78517064140000E0D98 /* ListeGrundpreisTableViewController.h */,
-				D0E4C78617064140000E0D98 /* ListeGrundpreisTableViewController.m */,
-				D0E4C78217063F48000E0D98 /* ListeGrundpreisTableViewCell.h */,
-				D0E4C78317063F48000E0D98 /* ListeGrundpreisTableViewCell.m */,
 				D0E4C77C17063875000E0D98 /* Zaehler */,
 			);
 			name = Einstellungen;
@@ -224,6 +226,10 @@
 		D0E4C78117063EED000E0D98 /* Grundpreis */ = {
 			isa = PBXGroup;
 			children = (
+				D0E4C78517064140000E0D98 /* ListeGrundpreisTableViewController.h */,
+				D0E4C78617064140000E0D98 /* ListeGrundpreisTableViewController.m */,
+				D0E4C78217063F48000E0D98 /* ListeGrundpreisTableViewCell.h */,
+				D0E4C78317063F48000E0D98 /* ListeGrundpreisTableViewCell.m */,
 				D0E4C77E17063DDE000E0D98 /* NeuerGrundpreisTableViewController.h */,
 				D0E4C77F17063DDE000E0D98 /* NeuerGrundpreisTableViewController.m */,
 			);
@@ -314,6 +320,8 @@
 				D0932F2617024AF400C1FB75 /* 40-inbox.png in Resources */,
 				D0932F2717024AF400C1FB75 /* 179-notepad.png in Resources */,
 				D0932F2917024B4300C1FB75 /* 19-gear.png in Resources */,
+				D0FA117D1709F6F8003B3A26 /* Icon.png in Resources */,
+				D0FA117F1709F701003B3A26 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +433,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VerbrauchStrGaWa/VerbrauchStrGaWa-Prefix.pch";
 				INFOPLIST_FILE = "VerbrauchStrGaWa/VerbrauchStrGaWa-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -437,7 +445,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VerbrauchStrGaWa/VerbrauchStrGaWa-Prefix.pch";
 				INFOPLIST_FILE = "VerbrauchStrGaWa/VerbrauchStrGaWa-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
