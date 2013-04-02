@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D071E3A6170B705A00F3B24F /* StroGaWaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D071E3A4170B705A00F3B24F /* StroGaWaModel.xcdatamodeld */; };
+		D071E3A9170B71A600F3B24F /* Ablesewerte.m in Sources */ = {isa = PBXBuildFile; fileRef = D071E3A8170B71A600F3B24F /* Ablesewerte.m */; };
+		D071E3AD170B752800F3B24F /* AblesewerteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D071E3AC170B752800F3B24F /* AblesewerteTableViewController.m */; };
 		D080618B16FF92B00097B2B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D080618A16FF92B00097B2B5 /* UIKit.framework */; };
 		D080618D16FF92B00097B2B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D080618C16FF92B00097B2B5 /* Foundation.framework */; };
 		D080618F16FF92B00097B2B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D080618E16FF92B00097B2B5 /* CoreGraphics.framework */; };
@@ -44,6 +47,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D071E3A5170B705A00F3B24F /* StroGaWaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StroGaWaModel.xcdatamodel; sourceTree = "<group>"; };
+		D071E3A7170B71A600F3B24F /* Ablesewerte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ablesewerte.h; sourceTree = "<group>"; };
+		D071E3A8170B71A600F3B24F /* Ablesewerte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ablesewerte.m; sourceTree = "<group>"; };
+		D071E3AB170B752800F3B24F /* AblesewerteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AblesewerteTableViewController.h; sourceTree = "<group>"; };
+		D071E3AC170B752800F3B24F /* AblesewerteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AblesewerteTableViewController.m; sourceTree = "<group>"; };
 		D080618716FF92B00097B2B5 /* VerbrauchStrGaWa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerbrauchStrGaWa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D080618A16FF92B00097B2B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D080618C16FF92B00097B2B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +118,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D071E3AA170B739300F3B24F /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				D071E3A4170B705A00F3B24F /* StroGaWaModel.xcdatamodeld */,
+				D071E3A7170B71A600F3B24F /* Ablesewerte.h */,
+				D071E3A8170B71A600F3B24F /* Ablesewerte.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
 		D080617E16FF92B00097B2B5 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +161,7 @@
 				D080619916FF92B10097B2B5 /* AppDelegate.h */,
 				D080619A16FF92B10097B2B5 /* AppDelegate.m */,
 				D08061A216FF92B20097B2B5 /* MainStoryboard.storyboard */,
+				D071E3AA170B739300F3B24F /* Core Data */,
 				D0E4C788170646FD000E0D98 /* Ablesewerte */,
 				D0E4C78917064732000E0D98 /* Monatsverbrauch */,
 				D0E4C77D170638A1000E0D98 /* Einstellungen */,
@@ -239,8 +258,10 @@
 		D0E4C788170646FD000E0D98 /* Ablesewerte */ = {
 			isa = PBXGroup;
 			children = (
-				D0C7EC9D1700E2FD00B77F93 /* MonatsverbrauchTableViewController.h */,
-				D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */,
+				D071E3AB170B752800F3B24F /* AblesewerteTableViewController.h */,
+				D071E3AC170B752800F3B24F /* AblesewerteTableViewController.m */,
+				D0C7ECA01700E77100B77F93 /* MonatswerteTableViewController.h */,
+				D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */,
 			);
 			name = Ablesewerte;
 			sourceTree = "<group>";
@@ -248,8 +269,8 @@
 		D0E4C78917064732000E0D98 /* Monatsverbrauch */ = {
 			isa = PBXGroup;
 			children = (
-				D0C7ECA01700E77100B77F93 /* MonatswerteTableViewController.h */,
-				D0C7ECA11700E77100B77F93 /* MonatswerteTableViewController.m */,
+				D0C7EC9D1700E2FD00B77F93 /* MonatsverbrauchTableViewController.h */,
+				D0C7EC9E1700E2FD00B77F93 /* MonatsverbrauchTableViewController.m */,
 			);
 			name = Monatsverbrauch;
 			sourceTree = "<group>";
@@ -346,6 +367,9 @@
 				D0E4C78017063DDF000E0D98 /* NeuerGrundpreisTableViewController.m in Sources */,
 				D0E4C78417063F48000E0D98 /* ListeGrundpreisTableViewCell.m in Sources */,
 				D0E4C78717064140000E0D98 /* ListeGrundpreisTableViewController.m in Sources */,
+				D071E3A6170B705A00F3B24F /* StroGaWaModel.xcdatamodeld in Sources */,
+				D071E3A9170B71A600F3B24F /* Ablesewerte.m in Sources */,
+				D071E3AD170B752800F3B24F /* AblesewerteTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +497,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D071E3A4170B705A00F3B24F /* StroGaWaModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D071E3A5170B705A00F3B24F /* StroGaWaModel.xcdatamodel */,
+			);
+			currentVersion = D071E3A5170B705A00F3B24F /* StroGaWaModel.xcdatamodel */;
+			path = StroGaWaModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D080617F16FF92B00097B2B5 /* Project object */;
 }

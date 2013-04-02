@@ -7,8 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "AblesewerteTableViewController.h"
+
+
+@interface AppDelegate ()
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, strong) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@end
 
 @implementation AppDelegate
+
+/* Brauche ich glaube ich nicht
+@synthesize window = _window;
+@synthesize managedObjectContext, managedObjectModel, persistentStoreCoordinator;
+*/
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
