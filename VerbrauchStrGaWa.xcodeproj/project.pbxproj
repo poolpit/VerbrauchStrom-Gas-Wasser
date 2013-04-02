@@ -10,6 +10,7 @@
 		D071E3A6170B705A00F3B24F /* StroGaWaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D071E3A4170B705A00F3B24F /* StroGaWaModel.xcdatamodeld */; };
 		D071E3A9170B71A600F3B24F /* Ablesewerte.m in Sources */ = {isa = PBXBuildFile; fileRef = D071E3A8170B71A600F3B24F /* Ablesewerte.m */; };
 		D071E3AD170B752800F3B24F /* AblesewerteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D071E3AC170B752800F3B24F /* AblesewerteTableViewController.m */; };
+		D071E3AF170B787900F3B24F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D071E3AE170B787900F3B24F /* CoreData.framework */; };
 		D080618B16FF92B00097B2B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D080618A16FF92B00097B2B5 /* UIKit.framework */; };
 		D080618D16FF92B00097B2B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D080618C16FF92B00097B2B5 /* Foundation.framework */; };
 		D080618F16FF92B00097B2B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D080618E16FF92B00097B2B5 /* CoreGraphics.framework */; };
@@ -52,6 +53,7 @@
 		D071E3A8170B71A600F3B24F /* Ablesewerte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ablesewerte.m; sourceTree = "<group>"; };
 		D071E3AB170B752800F3B24F /* AblesewerteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AblesewerteTableViewController.h; sourceTree = "<group>"; };
 		D071E3AC170B752800F3B24F /* AblesewerteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AblesewerteTableViewController.m; sourceTree = "<group>"; };
+		D071E3AE170B787900F3B24F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D080618716FF92B00097B2B5 /* VerbrauchStrGaWa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerbrauchStrGaWa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D080618A16FF92B00097B2B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D080618C16FF92B00097B2B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D071E3AF170B787900F3B24F /* CoreData.framework in Frameworks */,
 				D080618B16FF92B00097B2B5 /* UIKit.framework in Frameworks */,
 				D080618D16FF92B00097B2B5 /* Foundation.framework in Frameworks */,
 				D080618F16FF92B00097B2B5 /* CoreGraphics.framework in Frameworks */,
@@ -148,6 +151,7 @@
 		D080618916FF92B00097B2B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D071E3AE170B787900F3B24F /* CoreData.framework */,
 				D080618A16FF92B00097B2B5 /* UIKit.framework */,
 				D080618C16FF92B00097B2B5 /* Foundation.framework */,
 				D080618E16FF92B00097B2B5 /* CoreGraphics.framework */,
