@@ -12,7 +12,7 @@
 
 @interface Ablesewerte : NSManagedObject
 
-@property (nonatomic, retain) NSDate * ableseDatum;
+@property (nonatomic, retain) NSString * ableseDatum;
 @property (nonatomic, retain) NSNumber * ableseWertStrom;
 @property (nonatomic, retain) NSNumber * ableseWertGas;
 @property (nonatomic, retain) NSNumber * ableseWertWasser;

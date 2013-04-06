@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D071E3A6170B705A00F3B24F /* StroGaWaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D071E3A4170B705A00F3B24F /* StroGaWaModel.xcdatamodeld */; };
-		D071E3A9170B71A600F3B24F /* Ablesewerte.m in Sources */ = {isa = PBXBuildFile; fileRef = D071E3A8170B71A600F3B24F /* Ablesewerte.m */; };
 		D071E3AD170B752800F3B24F /* AblesewerteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D071E3AC170B752800F3B24F /* AblesewerteTableViewController.m */; };
 		D071E3AF170B787900F3B24F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D071E3AE170B787900F3B24F /* CoreData.framework */; };
 		D080618B16FF92B00097B2B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D080618A16FF92B00097B2B5 /* UIKit.framework */; };
@@ -25,6 +24,7 @@
 		D08061AB16FF92B20097B2B5 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D08061AA16FF92B20097B2B5 /* first@2x.png */; };
 		D08061B016FF92B20097B2B5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = D08061AF16FF92B20097B2B5 /* second.png */; };
 		D08061B216FF92B20097B2B5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D08061B116FF92B20097B2B5 /* second@2x.png */; };
+		D08E93FE17107C71001CD8F5 /* Ablesewerte.m in Sources */ = {isa = PBXBuildFile; fileRef = D08E93FD17107C71001CD8F5 /* Ablesewerte.m */; };
 		D0932F191702221F00C1FB75 /* JSMDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D0932F181702221F00C1FB75 /* JSMDatePicker.m */; };
 		D0932F1D170232F000C1FB75 /* HudView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0932F1C170232F000C1FB75 /* HudView.m */; };
 		D0932F201702345000C1FB75 /* Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = D0932F1E1702345000C1FB75 /* Checkmark.png */; };
@@ -49,8 +49,6 @@
 
 /* Begin PBXFileReference section */
 		D071E3A5170B705A00F3B24F /* StroGaWaModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StroGaWaModel.xcdatamodel; sourceTree = "<group>"; };
-		D071E3A7170B71A600F3B24F /* Ablesewerte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ablesewerte.h; sourceTree = "<group>"; };
-		D071E3A8170B71A600F3B24F /* Ablesewerte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ablesewerte.m; sourceTree = "<group>"; };
 		D071E3AB170B752800F3B24F /* AblesewerteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AblesewerteTableViewController.h; sourceTree = "<group>"; };
 		D071E3AC170B752800F3B24F /* AblesewerteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AblesewerteTableViewController.m; sourceTree = "<group>"; };
 		D071E3AE170B787900F3B24F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -72,6 +70,8 @@
 		D08061AA16FF92B20097B2B5 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		D08061AF16FF92B20097B2B5 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		D08061B116FF92B20097B2B5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		D08E93FC17107C71001CD8F5 /* Ablesewerte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ablesewerte.h; sourceTree = "<group>"; };
+		D08E93FD17107C71001CD8F5 /* Ablesewerte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ablesewerte.m; sourceTree = "<group>"; };
 		D0932F171702221F00C1FB75 /* JSMDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMDatePicker.h; sourceTree = "<group>"; };
 		D0932F181702221F00C1FB75 /* JSMDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMDatePicker.m; sourceTree = "<group>"; };
 		D0932F1B170232F000C1FB75 /* HudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudView.h; sourceTree = "<group>"; };
@@ -124,9 +124,9 @@
 		D071E3AA170B739300F3B24F /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				D08E93FC17107C71001CD8F5 /* Ablesewerte.h */,
+				D08E93FD17107C71001CD8F5 /* Ablesewerte.m */,
 				D071E3A4170B705A00F3B24F /* StroGaWaModel.xcdatamodeld */,
-				D071E3A7170B71A600F3B24F /* Ablesewerte.h */,
-				D071E3A8170B71A600F3B24F /* Ablesewerte.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -372,8 +372,8 @@
 				D0E4C78417063F48000E0D98 /* ListeGrundpreisTableViewCell.m in Sources */,
 				D0E4C78717064140000E0D98 /* ListeGrundpreisTableViewController.m in Sources */,
 				D071E3A6170B705A00F3B24F /* StroGaWaModel.xcdatamodeld in Sources */,
-				D071E3A9170B71A600F3B24F /* Ablesewerte.m in Sources */,
 				D071E3AD170B752800F3B24F /* AblesewerteTableViewController.m in Sources */,
+				D08E93FE17107C71001CD8F5 /* Ablesewerte.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,11 +7,13 @@
 //
 
 #import "MonatswerteTableViewController.h"
+#import "Ablesewerte.h"
+//#import "AppDelegate.h"
+
 
 
 @interface MonatswerteTableViewController () <UITextFieldDelegate>
 
-@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *MonatswerteCollection;
 
 // Für den DatePicker
 @property (nonatomic, strong) JSMDatePicker* datePicker;
@@ -21,6 +23,10 @@
 @implementation MonatswerteTableViewController
 
 @synthesize heutigesDatumTextField;
+@synthesize abgelesenStromTextField;
+@synthesize abgelesenGasTextField;
+@synthesize abgelesenWasserTextField;
+
 // Fuer Core Data
 @synthesize managedObjectContext;
 
@@ -29,6 +35,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
+
         // Custom initialization
     }
     return self;
@@ -38,6 +45,7 @@
 {
     [super viewDidLoad];
     
+    
     // DatePicker initialisieren und aktuelles Datum ins Feld setzen
     self.datePicker = [[JSMDatePicker alloc] initWithDateFormatString:@"dd-MM-yyyy" forTextField:self.heutigesDatumTextField withDatePickerMode:UIDatePickerModeDate];
     
@@ -45,7 +53,7 @@
     
     self.datePicker.date = [NSDate date];
     
-    self.navigationItem.title = @"Monatswerte";
+    //self.navigationItem.title = @"Monatswerte bla";
     
 
 }
@@ -70,7 +78,7 @@
 
 - (IBAction)SaveMonatswerte:(id)sender
 {
-    
+
     HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
 	[self.navigationController.view addSubview:HUD];
 	
@@ -80,9 +88,7 @@
 	HUD.square = YES;
 	
 	[HUD showWhileExecuting:@selector(savingMonatswerte) onTarget:self withObject:nil animated:YES];
-    
-
-    
+     
 }
 
 #pragma mark - Task aus Actions
@@ -92,19 +98,35 @@
 	// Do something usefull in here instead of sleeping ...
 	//sleep(1);
     
-    for (UITextField *textField in self.MonatswerteCollection)
-    {
-        textField.delegate = self;
-        NSLog(@"--> Der Platzhalter des aktuellen Feldes ist %@", textField.placeholder);
+    // Für CoreData den managedObjectContext holen
+    MonatswerteTableViewController *delegate = (MonatswerteTableViewController *)[[UIApplication sharedApplication] delegate];
+    
+    if (self.managedObjectContext != delegate.managedObjectContext) {
+        
+        self.managedObjectContext = delegate.managedObjectContext;
+        
     }
+
     
+    Ablesewerte *ablesewerte = [NSEntityDescription insertNewObjectForEntityForName:@"Ablesewerte" inManagedObjectContext:self.managedObjectContext];
+    
+    ablesewerte.ableseDatum = self.heutigesDatumTextField.text;
+    ablesewerte.ableseWertStrom = [NSNumber numberWithFloat:[self.abgelesenStromTextField.text floatValue]];
+    ablesewerte.ableseWertGas = [NSNumber numberWithFloat:[self.abgelesenGasTextField.text floatValue]];
+    ablesewerte.ableseWertWasser = [NSNumber numberWithFloat:[self.abgelesenWasserTextField.text floatValue]];
+  
+    //Jetzt die Daten speichern
+    NSError *error;
+    if (![self.managedObjectContext save:&error])
+    {
+        NSLog(@"Fehler beim speichern der Daten %@", error);
+        abort();
+    }
     //Die Zeit noch etwas verlängern
-    sleep(1);
-    
+    //sleep(2);
+
     //Und jetzt weg mit dem Femnster
     [self.navigationController popViewControllerAnimated:YES];
-
-
 
 }
 
@@ -117,4 +139,10 @@
 	HUD = nil;
 }
 
+- (void)viewDidUnload {
+    [self setAbgelesenStromTextField:nil];
+    [self setAbgelesenGasTextField:nil];
+    [self setAbgelesenWasserTextField:nil];
+    [super viewDidUnload];
+}
 @end

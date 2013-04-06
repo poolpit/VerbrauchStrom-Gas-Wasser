@@ -19,6 +19,9 @@
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *heutigesDatumTextField;
+@property (weak, nonatomic) IBOutlet UITextField *abgelesenStromTextField;
+@property (weak, nonatomic) IBOutlet UITextField *abgelesenGasTextField;
+@property (weak, nonatomic) IBOutlet UITextField *abgelesenWasserTextField;
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 

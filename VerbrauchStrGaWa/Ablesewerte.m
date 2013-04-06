@@ -2,7 +2,7 @@
 //  Ablesewerte.m
 //  VerbrauchStrGaWa
 //
-//  Created by Peter Wiest on 02.04.13.
+//  Created by Peter Wiest on 06.04.13.
 //  Copyright (c) 2013 pewi-web. All rights reserved.
 //
 
@@ -12,8 +12,8 @@
 @implementation Ablesewerte
 
 @dynamic ableseDatum;
-@dynamic ableseWertStrom;
 @dynamic ableseWertGas;
+@dynamic ableseWertStrom;
 @dynamic ableseWertWasser;
 
 @end

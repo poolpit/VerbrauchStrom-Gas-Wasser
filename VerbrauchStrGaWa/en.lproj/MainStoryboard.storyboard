@@ -81,7 +81,7 @@
                                                     <rect key="frame" x="8" y="6" width="285" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="Atw-ow-iIm" id="5Vp-3w-AZ8"/>
                                                     </connections>
@@ -105,7 +105,7 @@
                                                     <rect key="frame" x="9" y="6" width="285" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="Atw-ow-iIm" id="gMt-Ow-7nR"/>
                                                     </connections>
@@ -129,7 +129,7 @@
                                                     <rect key="frame" x="8" y="7" width="285" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="Atw-ow-iIm" id="KjF-QE-7fr"/>
                                                     </connections>
@@ -155,10 +155,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="abgelesenGasTextField" destination="0YP-hK-G26" id="A0c-tK-JEZ"/>
+                        <outlet property="abgelesenStromTextField" destination="v22-Dl-18R" id="EzN-h2-rDh"/>
+                        <outlet property="abgelesenWasserTextField" destination="4Pv-gR-d9G" id="5fE-or-IFi"/>
                         <outlet property="heutigesDatumTextField" destination="Q76-At-g1H" id="KpA-LR-6gL"/>
-                        <outletCollection property="MonatswerteCollection" destination="Q76-At-g1H" id="wcT-P3-qCt"/>
-                        <outletCollection property="MonatswerteCollection" destination="0YP-hK-G26" id="4YV-pi-Rs4"/>
-                        <outletCollection property="MonatswerteCollection" destination="4Pv-gR-d9G" id="Piw-lT-g2h"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRg-6x-Dy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1039,6 +1039,67 @@
         <image name="179-notepad.png" width="22" height="28"/>
         <image name="19-gear.png" width="26" height="26"/>
     </resources>
+    <classes>
+        <class className="AblesewerteTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AblesewerteTableViewController.h"/>
+        </class>
+        <class className="EinstellungenTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EinstellungenTableViewController.h"/>
+        </class>
+        <class className="ListeGrundpreisTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListeGrundpreisTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="GrundpreisTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="GrundpreisTypLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ZaehlerBildImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ZaehlerNrTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ListeGrundpreisTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListeGrundpreisTableViewController.h"/>
+        </class>
+        <class className="ListeZaehlerTableViewCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListeZaehlerTableViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="AnzeigeStatusSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="ZaehlerNummerTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="ZaehlerTypLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ListeZaehlerTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListeZaehlerTableViewController.h"/>
+        </class>
+        <class className="MonatsverbrauchTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MonatsverbrauchTableViewController.h"/>
+        </class>
+        <class className="MonatswerteTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MonatswerteTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="SaveMonatswerte:"/>
+                <relationship kind="outlet" name="abgelesenGasTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="abgelesenStromTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="abgelesenWasserTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="heutigesDatumTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NeuerGrundpreisTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NeuerGrundpreisTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="SaveGrundpreis:"/>
+                <relationship kind="outlet" name="GrundpreisBemerkungTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="GrundpreisSegmentedControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="GrundpreisWertTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="GrundpreisZaehlerImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="GrundpreisZaehlernrTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NeuerZaehlerTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NeuerZaehlerTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="SaveZaehler:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

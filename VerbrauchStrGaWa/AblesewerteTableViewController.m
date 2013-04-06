@@ -43,15 +43,26 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"AddWerte"]) {
-        UINavigationController *navigationController = segue.destinationViewController;
-        MonatswerteTableViewController *controller = (MonatswerteTableViewController *)navigationController.presentedViewController;
-        controller.managedObjectContext = self.managedObjectContext;
-        //controller.coordinate = location.coordinate;
-        //controller.placemark = placemark;
-    }
-}
+ 
+/*
+ if([segue.identifier isEqualToString:@"AddWerte"])
+ {
+     UINavigationController *viewController = segue.destinationViewController;
+     MonatswerteTableViewController *controller = (MonatswerteTableViewController *)viewController.presentingViewController;
+     controller.managedObjectContext = self.managedObjectContext;
 
+     NSError *error;
+     
+     if (controller.managedObjectContext == nil){
+                     NSLog(@"Kein managedObjectContent in AblesewerteTabelVieControler %@", error);
+             abort();
+         
+         
+     }
+           
+ }
+*/
+ }
 
 #pragma mark - Table view data source
 

@@ -19,7 +19,7 @@
         self.transform = CGAffineTransformMakeScale(1.3f, 1.3f);
 
         [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationDuration:0.3];
+        [UIView setAnimationDuration:2.1];
 
         self.alpha = 1.0f;
         self.transform = CGAffineTransformIdentity;

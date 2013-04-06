@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AblesewerteTableViewController.h"
+#import "MonatswerteTableViewController.h"
 
 
 @interface AppDelegate ()
@@ -29,11 +30,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Die Zeilen aus Internet
+    // Override point for customization after application launch.
+    /*UITabBarController *tabController = (UITabBarController *)self.window.rootViewController;
+    
+    UINavigationController *navigationController = (UINavigationController *)[[tabController viewControllers] objectAtIndex:0];
+    MasterViewController *controller = (MasterViewController *)[[navigationController viewControllers] objectAtIndex:0];
+    controller.managedObjectContext = self.managedObjectContext;
+    
+    navigationController = (UINavigationController *)[[tabController viewControllers] objectAtIndex:1];
+    controller = (MasterViewController *)[[navigationController viewControllers] objectAtIndex:0];
+    controller.managedObjectContext = self.managedObjectContext;
+    
+    navigationController = (UINavigationController *)[[tabController viewControllers] objectAtIndex:2];
+    controller = (MasterViewController *)[[navigationController viewControllers] objectAtIndex:0];
+    controller.managedObjectContext = self.managedObjectContext;
+    
+    return YES;
+    */
+    // Meine Zeilen
         UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
         
         UINavigationController *navigationController = (UINavigationController *)[[tabBarController viewControllers] objectAtIndex:1];
         AblesewerteTableViewController *ablesewerteTableViewController = (AblesewerteTableViewController *)[[navigationController viewControllers] objectAtIndex:0];
+        
         ablesewerteTableViewController.managedObjectContext = self.managedObjectContext;
+    
+        MonatswerteTableViewController *monatswerteTableViewController = (MonatswerteTableViewController *)[[navigationController viewControllers] objectAtIndex:0];
+    
+        monatswerteTableViewController.managedObjectContext = self.managedObjectContext;
+
 /*
         navigationController = (UINavigationController *)[[tabBarController viewControllers] objectAtIndex:1];
         LocationsViewController *locationsViewController = (LocationsViewController *)[[navigationController viewControllers] objectAtIndex:0];
