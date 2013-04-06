@@ -20,6 +20,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *heutigesDatumTextField;
 
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+
+
 - (IBAction)SaveMonatswerte:(id)sender;
 
 @end

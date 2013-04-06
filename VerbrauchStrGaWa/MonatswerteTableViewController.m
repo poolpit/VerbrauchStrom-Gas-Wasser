@@ -21,6 +21,9 @@
 @implementation MonatswerteTableViewController
 
 @synthesize heutigesDatumTextField;
+// Fuer Core Data
+@synthesize managedObjectContext;
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {

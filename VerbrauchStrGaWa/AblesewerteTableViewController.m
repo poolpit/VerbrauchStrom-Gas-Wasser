@@ -7,6 +7,7 @@
 //
 
 #import "AblesewerteTableViewController.h"
+#import "MonatswerteTableViewController.h"
 
 @interface AblesewerteTableViewController ()
 
@@ -39,6 +40,18 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"AddWerte"]) {
+        UINavigationController *navigationController = segue.destinationViewController;
+        MonatswerteTableViewController *controller = (MonatswerteTableViewController *)navigationController.presentedViewController;
+        controller.managedObjectContext = self.managedObjectContext;
+        //controller.coordinate = location.coordinate;
+        //controller.placemark = placemark;
+    }
+}
+
 
 #pragma mark - Table view data source
 
